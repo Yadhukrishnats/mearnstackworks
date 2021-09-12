@@ -1,0 +1,16 @@
+.row{
+    border: 1px solid black;
+    background-color: rgb(20, 224, 224);
+    width: 400px;
+    height: 400px;
+
+}
+.col{
+    position: absolute;
+    border: 1px solid black;
+    top: 100px;
+    left: 100px;
+    background-color: rgb(64, 189, 27);
+    width: 200px;
+    height: 200px;
+}
