@@ -1,11 +1,7 @@
-///111
-///222
-///333
-
 for(let row=1;row<=3;row++){
-    let str=""
+    let str="hhaaii hhooww"
     for(let col=1;col<=3;col++){
-str+=row;
+        str+=row;
     }
     console.log(str);
 }

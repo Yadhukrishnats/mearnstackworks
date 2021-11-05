@@ -1,13 +1,10 @@
-var num=7
+var num=11;
 if(num%2==0){
-    console.log("Even");
+    console.log("is even");
+}
+else if(num%2==!0){
+    console.log("is odd");
 }
 else{
-    console.log("Odd");
+    console.log("invalid choice");
 }
-
-//ternary operator
-// ternary operator=condition?true:false
-
-var res=num%2==0?"even":"odd"
-console.log(res);

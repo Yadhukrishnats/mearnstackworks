@@ -1,22 +1,12 @@
-//initialization
-//condition
-//inc/dec
+// initialisation
+// condition
+// incre/decre
+// for(initialization;condition;incre/drecre){
+    // loopbody
+// }
 
-//syntax
+// 5 to 1
 
-//for(initialization;condition;inc/dec){
-//    loopbody
-//}
-
-//question
-// print 1 to 5
-
-//for(let i=1;i<=5;i++){
-//    console.log(i);
-//}
-
-// print 5 to 1
-
-for(let i=5;i>0;i--){
-       console.log(i);
+for(let i=5;i<=5;i++){
+    console.log(i);
 }

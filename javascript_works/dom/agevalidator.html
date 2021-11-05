@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>title</title>
+</head>
+<body>
+    <h1>age validator</h1>
+    <input type="text" id="age" placeholder="enter age">
+    <button onclick="validateAge()">validate</button>
+</body>
+<script>
+    function validateAge(){
+        let mage=document.queryselector("#age").value;
+        let html_div=document.queryselector("#result");
+        if(mage<18){
+            html_div.innerHTML="invalid age"
+        }
+        else{
+            html_div.innerHTML="VALID AGE"
+        }
+        html_div.innerHTML=data
+    }
+</script>
+</html>

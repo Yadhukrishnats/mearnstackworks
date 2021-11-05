@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        height: 100vh;
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        background-repeat: no-repeat;
+        max-width: 250px;
+        margin: auto;
+        margin-top: 200px;
+        }
+        
+            
+         .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+         .btn-grad {
+            margin: 27px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+          
+         
+        
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <div class="mb3">
+                    <input type="text" id="bk_name" placeholder="ENTER BOOK NAME" required>
+                </div>
+                <div class="mb3">
+                    <input type="text" id="bk_author" placeholder="ENTER AUTHOR NAME" required>
+                </div>
+                <div class="mb3">
+                    <input type="number" id="bk_price" placeholder="ENTER PRICE" required>
+                </div>
+                <div class="mb3">
+                    <input type="text" id="bk_copies" placeholder="ENTER COPIES" required>
+                </div>
+
+                <div class="mb3">
+<button class="btn btn-success btn-grad" onclick="book.addToDb()">Add</button> 
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+<script src="./book.js"></script>
+</html>

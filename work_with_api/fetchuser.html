@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API's</title>
+</head>
+<body>
+    <button onclick="fetchusers()">Fetch Users</button>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Username</td>
+            <td>Email</td>
+        </tr>
+        <tbody id="result"></tbody>
+    </table>
+</body>
+    <script>
+        function fetchusers(){
+       let request=new XMLHttpRequest()
+       request.open("get","https://jsonplaceholder.typicode.com/users")
+       request.send()
+       request.onreadystatechange=()=>{
+           if(request.readyState==4){
+               if(request.status >199 && request.status<300){
+                   //console.log(request.responseText);
+                   let users=JSON.parse(request.responseText)
+                   populateValues(users)
+               }
+           }
+       }
+     function populateValues(users){
+         let html_data=``
+         for(let user of users){
+             let name=user.name;
+             let uname=user.username;
+             let mail=user.email;
+             html_data+=`<tr> <td> ${name} </td> <td> ${uname} </td> <td> ${mail} </td></tr>`
+         }
+         document.querySelector("#result").innerHTML=html_data
+     }
+        }
+    </script>
+</html>
